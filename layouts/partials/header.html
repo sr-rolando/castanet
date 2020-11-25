@@ -8,7 +8,7 @@
   <div id="navbarSupportedContent" class="navbar-collapse collapse">
       <ul class="navbar-nav mr-auto">
           {{ $currentPage := . }}
-          {{ range sort .Site.Menus.main "Identifier"}}
+          {{ range sort .Site.Menus.main "Weight"}}
             {{ if .HasChildren }}
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }}</a>
